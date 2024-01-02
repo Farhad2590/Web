@@ -1,0 +1,26 @@
+.header{
+    color: chartreuse;
+    height: 300px;
+    /* background-image: url(liverpool.png); */
+    background-image: url(../images/liverpool.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+}
+h3{
+    font-size: 30px;
+}
+.second{
+    display: none;
+    /* visibility: hidden; */
+}
+.blog{
+    margin: 20px;
+    border: 10px solid tomato;
+    box-shadow: 10px 10px 10px blue;
+}
+.incident{
+    border: 2px solid tomato;
+    display: block;
+    /* margin: 20px; */
+}
