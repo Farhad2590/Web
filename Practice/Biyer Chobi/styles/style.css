@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: url(../images/slider-bg.jpg);
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind all other elements */
+
+}
+h1{
+    color: white;
+    padding-top: 200px;
+}
+p{
+    color: aliceblue;
+}
+/* #header-text{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+
+} */
+#button-one{
+    padding: 8px 22px;
+}
