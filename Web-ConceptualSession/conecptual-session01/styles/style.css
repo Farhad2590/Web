@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-image: url(../images/Cow.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+}
+
+.hero h1{
+    color: aliceblue;
+    font-size: 100px;
+    text-align: center;
+    word-spacing: 40px;
+    letter-spacing: 20px;
+    padding-top: 60px;
+    font-family: 'Rubik Maps', system-ui;
+}
