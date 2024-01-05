@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamal er Mayer Pita </title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="vedio.html">Vedios</a></li>
+            <li><a href="table.html">Table</a></li>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Please Fill Up Your From</h2>
+            <form>
+                <label for="name">Your Name:
+                    <input id="name" type="text" name="" placeholder="Your Name">
+                </label>
+                <label for="email">Your Email:
+                    <input id="email" type="email" name="" placeholder="Your email">
+                </label>
+                <label for="phone">Your Phone:
+                    <input id="phone" type="phone" name="" placeholder="Your phone">
+                </label>
+                <fieldset>
+                    <legend>Pick One Pitha</legend>
+                    <label for="chitoy">
+                        <input type="radio" name="Pitha" id="chitoy"> Chitoy
+                    </label>
+                    <label for="vapha">
+                        <input type="radio" name="Pitha" id="vapha"> Vapha 
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pick One Sorisha</legend>
+                    <label for="sorisha">
+                        <input type="checkbox" name="bortha" id="sorisha"> Sorisha
+                    </label>
+                    <label for="shutki">
+                        <input type="checkbox" name="bortha" id="shutki"> Shutki
+                    </label>
+                    <label for="chili">
+                        <input type="checkbox" name="bortha" id="chili"> Chili
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

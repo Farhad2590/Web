@@ -1,0 +1,15 @@
+nav, ul{
+    display: flex;
+}
+nav,li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+nav, li, a{
+    text-decoration: none;
+    color: black;
+}
+nav li:hover{
+    background-color: lightgray;
+}
