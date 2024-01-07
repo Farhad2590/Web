@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+
+.header-banner {
+    background-image: url("../images/banner/banner1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.banner-style {
+    padding-top: 160px;
+    padding-left: 650px;
+    padding-right: 100px;
+    text-align: right;
+}
+
+.banner-description {
+    padding-top: 20px;
+    padding-left: 500px;
+    padding-right: 100px;
+    text-align: right;
+}
+
+.main {
+    margin-right: 190px;
+    margin-left: 190px;
+    /* margin-top: 30px; */
+}
+
+.second {
+    display: flex;
+    /* width: 50%; */
+    gap: 20px;
+
+}
+
+.second-img img {
+    width: 250px;
+    height: 350px;
+    padding-top: 140px;
+    /* padding-left: 150px; */
+}
+
+.second-text {
+    padding-top: 150px;
+}
+
+.second-text h2 {
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+.second-description {
+    padding-left: 40px;
+    color: var(--Dark-02, #444343);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+    /* 162.5% */
+}
+
+.second-text,
+ul,
+li {
+    list-style: none;
+    color: var(--Dark-02, #444343);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.third-title {
+    color: var(--Dark-01, #151414);
+    font-family: Work Sans;
+    text-align: center;
+
+}
+.third-box-container{
+    display: flex;
+    gap: 100px
+    ;
+}
+.third{
+    margin-bottom: 30px;
+}
+.fourth{
+    background-image: url("../images/gradient2.png"),url("../images/watch.png");
+    background-size: 100%;
+    margin-bottom: 30px;
+    background-position: center;
+    border-radius: none;
+}
+.fourth-text{
+    /* width: 459px; */
+    padding-left: 65px;
+    padding-right: 300px;
+}
+.fourth-text h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.fourth-text button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+footer{
+
+    background-color: #151414;
+    color: aliceblue;
+    padding-top: 30px;
+    display: flex;
+
+    /* width: 50%; */
+}
+.icons{
+    width: 175px;
+height: 46px;
+flex-shrink: 0;
+}
