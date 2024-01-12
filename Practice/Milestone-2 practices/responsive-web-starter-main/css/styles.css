@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* img{
+    width: 100%;
+}
+.google-rating{
+    height: 400px;
+    width: 400px;
+}
+.meta{
+    height: 400px;
+    width: 400px;
+} */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media screen and (min-width: 720px) {
+    /* .logo {
+        display: initial;
+    }
+
+    .get-started {
+        width: auto;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    } */
+
+  }

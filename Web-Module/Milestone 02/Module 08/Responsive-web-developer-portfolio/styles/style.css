@@ -233,3 +233,23 @@ footer {
     margin-bottom: 25px;
     width: 100%;
 }
+
+.hide{
+    display: none;
+}
+
+/* respomsive media query  */
+
+/* medium device  */
+@media screen and (max-width : 576px){
+    .skills-container{
+        flex-direction: column;
+    }
+
+    #what-i-do-description {
+        padding: 20px;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+}
