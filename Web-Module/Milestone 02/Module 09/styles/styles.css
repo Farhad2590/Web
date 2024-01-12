@@ -80,13 +80,38 @@ img {
     font-weight: 400;
     color: #727272;
 }
-
-
+main{
+    /* max-width: 1440px; */
+    margin: 0 100px;
+}
+/* features section  */
+.team{
+    display: flex;
+    align-items: center;
+}
+.image-team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.text-team{
+    padding-left: 70px;
+    padding-right: 70px;
+}
 /* responsive designs  */
-
+/* for phone  */
 @media screen and (max-width : 576px){
     header{
         padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* for tablet or medium device  */
+@media screen and (min-width : 576px) and (max-width : 960px){
+    header{
+        padding: 50px;
     }
     nav{
         flex-direction: column;
