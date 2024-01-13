@@ -6,6 +6,16 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.text-light-gray {
+    color: #727272;
+}
+
+.h3-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
 .btn-primary {
     border-radius: 8px;
     background: #FF900E;
@@ -28,11 +38,7 @@ nav {
     align-items: center;
 }
 
-.nav-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
-}
+
 
 nav,
 ul {
@@ -76,44 +82,132 @@ img {
     color: #131313;
 }
 
-.banner-description {
-    font-weight: 400;
-    color: #727272;
-}
-main{
+
+main {
     /* max-width: 1440px; */
-    margin: 0 100px;
+    margin: 70px 100px;
 }
+
 /* features section  */
-.team{
+.team {
     display: flex;
     align-items: center;
 }
-.image-team{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
+
+.image-team,
+img {
+    width: 100%;
 }
-.text-team{
+
+.image-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.text-team {
     padding-left: 70px;
     padding-right: 70px;
 }
+
+.title-teams {
+    font-size: 2.8rem;
+}
+
+.title-teams .quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.title-teams .text-features {
+    color: #FF900E;
+    font-weight: 500;
+}
+
+/* facts section  */
+.facts-container-card {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /* align-items: center; */
+}
+
+/* .card img{
+    width: 50px;
+} */
+.facts-container-card .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px;
+}
+
+.facts-container-card .card-starts {
+    font-size: 2rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-container-card .card-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+/* sponsors section  */
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
 /* responsive designs  */
 /* for phone  */
-@media screen and (max-width : 576px){
-    header{
+@media screen and (max-width : 576px) {
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav,
+    .team,
+    .sponsors-img-container {
         flex-direction: column;
     }
+
+    .image-team {
+
+        grid-template-columns: 1fr;
+    }
+
+    .text-team {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .facts-container-card{
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
 }
+
 /* for tablet or medium device  */
-@media screen and (min-width : 576px) and (max-width : 960px){
-    header{
+@media screen and (min-width : 576px) and (max-width : 960px) {
+    header {
         padding: 50px;
     }
-    nav{
+
+    nav,
+    .team ,
+    .sponsors-img-container {
         flex-direction: column;
     }
 }
