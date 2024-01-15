@@ -11,17 +11,20 @@ body{
 }
 
 /* nav bar style starts here   */
+header {
+    background-color: #9376e0;
+    min-height: 50px;
+  }
 .nav-container{
     max-width: 850px;
-    border: 2px solid blanchedalmond;
     margin : 0 auto;
+    display: flex;
 
 }
 .image-container{
     display: flex;
     width: 50%;
     align-items: center;
-    border: 2px solid black;
 }
 .image-container img{
     width: 80px;
@@ -31,4 +34,58 @@ body{
     font-weight: 600;
 
 }
+.special-color{
+    color: #e893cf;
+    font-weight: 900;
+}
+.list-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-container a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+    padding: 10px 20px;
+    background-color: #e893cf;
+    border-radius: 5px;
+}
+.list-container, .login a{
+    /* text-decoration: none; */
+    color: black;
+}
 /* nav bar style ends here   */
+
+/* banner style starts here  */
+.banner{
+    display: flex;
+    max-width: 850px;
+    margin : 0 auto;
+    border: 2px solid red;
+    
+}
+.banner-text{
+    border: 2px solid salmon;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-text h1, p, span{
+    font-size: 2.5rem;
+}
+.banner-image{
+    border: 2px solid green;
+    width: 50%;
+}
+.banner-image img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+/* banner style end here  */

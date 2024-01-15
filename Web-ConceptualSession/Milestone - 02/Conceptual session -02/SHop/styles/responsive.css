@@ -1,0 +1,15 @@
+@media screen and (max-width : 576px ) {
+    .nav-container , .list-container{
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-left: 50px;
+    }
+    .list-container{
+        flex-direction: column;
+        /* justify-content: center; */
+        margin-left: 50px;
+        gap: 20px
+        ;
+    }
+}
