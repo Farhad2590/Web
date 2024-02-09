@@ -1,0 +1,1 @@
+console.log("Kire Ami Dom, Chinsos Amare?");

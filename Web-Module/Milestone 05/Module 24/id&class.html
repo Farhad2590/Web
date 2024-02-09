@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >getElementsById</h1>
+    <h3 id="fruits">Fruits I Like</h3>
+    <ul>
+        <li class="fruit-1">Orange</li>
+        <li class="fruit-1">Apple</li>
+        <li class="fruit-1">Apple</li>
+    </ul>
+
+    <script>
+        const fruits = document.getElementById('fruits').innerText ='My tour list';
+        
+        console.log(fruits);
+
+        const fruit_class = document.getElementsByClassName('fruit-1');
+        for(const fruit of fruit_class){
+            console.log(fruit.innerText);
+        }
+    </script>
+</body>
+</html>

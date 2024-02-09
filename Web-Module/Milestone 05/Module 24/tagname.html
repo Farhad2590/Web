@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getElementsByTagName is array like object</h1>
+    <ul>
+        <li>Nafisa</li>
+        <li>Lubaba</li>
+        <li>Beyadop</li>
+        <li>Meye</li>
+        <li>DOm Chine na</li>
+    </ul>
+
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+    </script>
+</body>
+</html>
