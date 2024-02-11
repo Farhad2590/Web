@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">getElementsById</h1>
+    <h3 id="fruits">Fruits I Like</h3>
+    <ul class="fruits-li">
+        <li class="fruit-1">Orange</li>
+        <li class="fruit-1">Apple</li>
+        <li class="fruit-1">Banana</li>
+    </ul>
+
+    <script>
+        const query = document.querySelectorAll('.fruits-li li');
+        // console.log(query);
+        for(const li of query){
+            console.log(li.innerText);
+        }
+
+        const list = document.querySelector('.fruits-li li');
+        console.log(list);
+
+        const head= document.getElementById('heading').style.backgroundColor=('red');
+    </script>
+</body>
+</html>

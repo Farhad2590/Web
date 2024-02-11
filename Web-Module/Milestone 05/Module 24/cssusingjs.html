@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dom.css">
+</head>
+<body id="main">
+    <section>
+        <h1 class="center" id = "centerbg">Places I Like To Visit</h1>
+        <ul>
+            <li>Bandarban</li>
+            <li>Kagrachori</li>
+            <li>Rangamati</li>
+            <li>Sundarban</li>
+        </ul>
+    </section>
+    <section>
+        <h1 class="center">Food I Like To Eat</h1>
+        <ul>
+            <li>Kacchi birani</li>
+            <li>Modhubat</li>
+            <li>Doi Fuchka</li>
+            <li>Borhani</li>
+        </ul>
+    </section>
+    <section>
+        <h1 class="center">Car I want To Buy</h1>
+        <ul id="cars">
+            <li>Ferari</li>
+            <li>Toyota</li>
+            <li>Hundai</li>
+            <li>Honda</li>
+        </ul>
+    </section>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        for(const section of sections){
+            // console.log(section);
+            section.style.border="5px solid steelblue";
+            section.style.marginBottom ="10px";
+            section.style.backgroundColor="gray"
+        }
+
+        const newclas = document.getElementById('centerbg');
+        newclas.classList.add('text');
+        newclas.classList.remove('text');
+    </script>
+    <script src="js/append.js"></script>
+</body>
+</html>

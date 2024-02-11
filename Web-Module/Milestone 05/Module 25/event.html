@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Final Dom Summury</h1>
+    <h3 id="h3">Deafault Text</h3>
+    <br>
+    <br>
+    <p id="ptag">Default Text</p>
+    <input id="text-input" type="text">
+    <button id="Update">Update</button>
+    <br>
+    <br>
+    <button onclick="handleOnClick()">Handele vent by add onclick function</button>
+    <button id="add_event">Hnadle Event By Add Event Listener</button>
+
+
+    <script>
+        function handleOnClick(){
+            const handlerstatus = document.getElementById('h3');
+            handlerstatus.innerText="H3 Text updated by onclick";
+        }
+
+        document.getElementById("add_event").addEventListener('click',function(){
+            const handlerstatus = document.getElementById('h3');
+            handlerstatus.innerText="H3 Text updated by addeventlistener";
+        })
+        document.getElementById("Update").addEventListener('click',function(){
+            const inputField = document.getElementById('text-input');
+            const input = inputField.value;
+            const pharagraph = document.getElementById('ptag');
+            pharagraph.innerText = input;
+            inputField.value ="";
+        })
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Js Dom Events</h1>
+
+    <button onclick="document.body.style.backgroundColor = ('red')">Make Red</button>
+    <button onclick="makeread()">Make Yellow</button>
+    <button id="makeBlue">Make Blue</button>
+    <button id="makePurple">Make Purple</button>
+    <button id="makePink">Make Pink</button>
+    <button id="makeOrange">Make Orange</button>
+    <button id="makeGreen">Make Green</button>
+
+
+    <script src="js/event.js"></script>
+    <script>
+        document.getElementById('makeGreen').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'green';
+        })
+
+    </script>
+</body>
+
+</html>
