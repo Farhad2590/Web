@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Multiple Element Selector</h1>
+    <ul id="ul">
+        <li class="item">getElementsByTagName</li>
+        <li class="item">getElementsByClassName</li>
+        <li class="item">querySelectorAll</li>
+    </ul>
+
+    <h2 class="fruits-title">Fruits I Like To Eat</h2>
+    <ul>
+        <li class="fruits-item">Apple</li>
+        <li class="fruits-item">Orange</li>
+        <li class="fruits-item">Banana</li>
+        <li class="fruits-item">Lichu</li>
+    </ul>
+
+
+    <script>
+
+        // by class 
+
+        const items = document.getElementsByClassName('fruits-item');
+
+        for (let item = 0; item < items.length; item++) {
+            const element = items[item];
+            element.style.backgroundColor = 'Red';
+            // console.log(element);
+        }
+
+        // by tagname 
+
+        const ulList = document.getElementsByTagName('ul');
+
+        for (let i = 0; i < ulList.length; i++) {
+            ulList[i].style.textAlign = 'center';
+        }
+
+        // by query selector 
+        const items1 = document.querySelectorAll('.item');
+
+        for (let items = 0; items < items1.length; items++) {
+            const element = items1[items];
+            element.style.backgroundColor = 'yellow';
+            // console.log(element);
+        }
+        const bodyName = document.querySelector("body");
+        // console.log(bodyName.childNodes);
+        // console.log(bodyName.children);
+
+        const ul = document.getElementById('ul');
+        // console.log(ul.childNodes);
+        // console.log(ul.parentNode);
+        // console.log(ul.nextElementSibling);
+        // console.log(ul.nextSibling);
+        // console.log(ul.previousElementSibling);
+        console.log(ul.previousSibling);
+    </script>
+</body>
+
+</html>

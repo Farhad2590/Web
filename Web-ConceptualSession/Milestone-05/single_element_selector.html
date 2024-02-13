@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Single Element Selector</h1>
+    <h1 id="h1-title-1">Id Diye Update Hobe</h1>
+    <h1 id="h1-title-2">Query selector Diye Update hobe</h1>
+    <input id="input-text" type="text">
+    <button id="update-button-id">Update For Id</button>
+    <button id="update-button-query">Update For Query</button>
+
+
+    <script>
+        //By id
+        document.getElementById('update-button-id').addEventListener('click', function () {
+            const title = document.getElementById('h1-title-1');
+
+            const text = document.getElementById('input-text');
+            const text_field = text.value;
+            title.innerText = text_field;
+            text.value = ""
+        })
+        //By queryselector
+        document.querySelector('#update-button-query').addEventListener('click', function () {
+            const title = document.querySelector('#h1-title-2');
+
+            const text = document.querySelector('#input-text');
+            const text_field = text.value;
+            title.innerText = text_field;
+            text.value = ""
+        })
+    </script>
+</body>
+
+</html>
