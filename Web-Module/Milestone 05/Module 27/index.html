@@ -81,25 +81,25 @@
             <div class="flex gap-96 justify-between">
                 <button class="btn bg-purple-300">
                     Life
-                    <img src="images/life.svg" alt="" srcset="">
+                    <img src="images/life.svg" alt="" srcset=""> <span id="life">5</span>
 
                 </button>
                 <button onclick="score()" class="btn bg-violet-600	">
                     Score
-                    <img src="images/dollar.svg" alt="" srcset="">
+                    <img src="images/dollar.svg" alt="" srcset=""> <span id="score">0</span>
 
                 </button>
             </div>
         </section>
 
         <!-- score  -->
-        <section id="score" class="min-h-screen flex justify-center items-center hidden">
+        <section id="scorelist" class="min-h-screen flex justify-center items-center hidden">
             <div class="text-center  space-y-6 bg-[#FFFFFF33] p-6 rounded-lg">
                 <h1 class="text-6xl text-white">
                     <span>Score : </span>
-                    <span>14</span>
+                    <span id="score_final">0</span>
                 </h1>
-                <button onclick="playAgain()" class="btn bg-white">Play Now</button>
+                <button onclick="play()" class="btn bg-white">Play Now</button>
                 <p class="text-white">Practice will make you Pro</p>
             </div>
         </section>

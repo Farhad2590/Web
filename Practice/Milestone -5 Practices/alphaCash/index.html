@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header></header>
+    <main class="bg-cover bg-center min-h-screen" style="background-image: url('./images/banner.png')">
+        <section id="section-home" class="">
+            <div class="min-h-screen flex justify-center">
+                <div class="flex items-center justify-center">
+                    <div class="w-64">
+                        <img class="" src="images/logo.png" alt="Logo">
+                    </div>
+                    <div class="text-white">
+                        <h1 class=" text-5xl font-bold">ALPHA <span class="text-green-500">CASH</span></h1>
+                        <p class="text-xl mt-2">Unleash Your Keyboard Kung Fu : <br> Press “Enter” to Play</p>
+                        <button onclick="playStart()" class="text-white btn btn-success">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-playGround" class="min-h-screen hidden ">
+            <div class="flex flex-col items-center justify-center gap-5">
+                <div
+                    class="artboard artboard-horizontal phone-1 border-[20px] rounded-2xl border-[#229459B3]  bg-[#FFFFFFB3]">
+                    <div class="flex text-white justify-center">
+                        <p class="bg-black px-4 pb-2 rounded-sm">Don't watch keyboard while playing...</p>
+                    </div>
+
+                    <div class="flex justify-center items-center h-full">
+                        <p id="currentAlphabet" class="text-6xl font-bold">Y</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                    </div>
+                </div>
+                <div class="flex gap-x-96 justify-between">
+                    <button class="btn btn-error text-white">Life <img src="images/life.svg" alt="" srcset=""><span>05</span></button>
+                    <button class="btn btn-success text-white">Score<img src="images/dollar.svg" alt="" srcset=""><span>00</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="min-h-screen flex flex-col items-center justify-center  ">
+                <div class="flex items-center justify-center">
+                    <div class="w-40">
+                        <img class="" src="images/logo.png" alt="Logo">
+                    </div>
+                    <div class="text-white">
+                        <h1 class="text-white text-3xl font-bold">Score :<span class="text-green-500"> 00</span></h1>
+                        <button class="text-white btn btn-success">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/utility.js"></script>
+    <script src="js/script.js"></script>r
+
+</body>
+
+</html>

@@ -1,32 +1,63 @@
-function hideElementById(inputId){
+function hideElementById(inputId) {
     const buttonId = document.getElementById(inputId);
     buttonId.classList.add('hidden');
-    
+
 
 }
 
-function showElementById(inputId){
+function showElementById(inputId) {
     const buttonId = document.getElementById(inputId);
     buttonId.classList.remove('hidden');
 
 }
 
-function setAlphabetColor(inputId){
+function getElementTextById(inputId) {
+    const text = document.getElementById(inputId);
+    const currentText = text.innerText;
+    return currentText;
+}
+
+function setAlphabetColor(inputId) {
     const buttonId = document.getElementById(inputId);
     buttonId.classList.add('bg-orange-400');
 }
 
-function randomAlphabelt(){
+function removeAlphabetColor(inputId) {
+    const buttonId = document.getElementById(inputId);
+    buttonId.classList.remove('bg-orange-400');
+}
+
+function getScoreLife(inputId) {
+    const text = document.getElementById(inputId);
+    const textInner = text.innerText;
+    const textInt = parseInt(textInner);
+
+    return textInt;
+}
+
+function setScoreLife(inputId, value) {
+    const text = document.getElementById(inputId);
+    text.innerText = value;
+}
+
+function randomAlphabelt() {
     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
     const alphabetarr = alphabet.split('');
-    // console.log(alphabetarr);
-
-    const number = Math.random()*25;
+    const number = Math.random() * 25;
     const numberRound = Math.round(number)
-
     const alphabetNumber = alphabetarr[numberRound];
-   
-    // console.log(numberRound,alphabetnum);
-
     return alphabetNumber;
+}
+
+function gameOver() {
+    hideElementById('play');
+    showElementById('scorelist');
+
+    const lastscore = getScoreLife('score');
+
+    setScoreLife('score_final', lastscore);
+
+    const alphabet = getElementTextById('currentAlphabet');
+    removeAlphabetColor(alphabet);
+
 }
