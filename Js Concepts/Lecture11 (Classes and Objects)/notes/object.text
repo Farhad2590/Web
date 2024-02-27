@@ -1,0 +1,42 @@
+Prototypes in Js:
+A javaScript object is an entity having state and behavior (properties and method), JS objects have a special property called prototype.
+We can set prototype using _proto_
+*If object & prototype have same method,
+object's method will be used.
+
+Classes in JS:
+Class is a program-code template for creating objects.
+Those objects will have some state (variables) & some behaviour (functions) inside it.
+
+class MyClass{
+constructor() {...}
+myMethod() { ... }
+}
+let myObj = new MyClass();
+
+Constructor() method is :
+• automatically invoked by new
+• initializes object
+কোন একটা অবজেক্ট যখন বানায়, Class ইউস করে তখন আমাদের New keyword ইউস করতে হয়,তখন এই keyword যদি constructor কে না পাই সে অটোমেটাকেলি একটা ক্রিয়েট করে দেয়।
+
+class MyClass {
+constructor() {...}
+myMethod() {...}
+}
+
+Inheritance in JS
+inheritance is passing down properties & methods from parent class to child class.
+class Parent {
+}
+class Child extends Parent {
+}
+
+*If Child & Parent have same method, child's method will be used. [Method Overriding]
+দুই জায়গায় সেইম মেথড হইলে child এর টা কাজ করবে,  এইটা কে বলে Method Overriding
+
+
+super Keyword
+The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+
+super(args) // calls Parent's constructor
+super.parentMethod(args)
