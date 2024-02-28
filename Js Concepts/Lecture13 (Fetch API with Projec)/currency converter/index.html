@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/eae2dd41b9.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="bg-orange-200">
+    <main>
+        <section class="flex items-center justify-center min-h-screen">
+            <div class="space-y-5 bg-white p-10 rounded-2xl">
+                <h1 class="text-4xl">Currency Converter</h1>
+                <div>
+                    <p>Enter Amount</p>
+                    <input type="text" placeholder="Type here" class="input input-bordered input-md w-full " />
+                </div>
+                <div class="dropdown flex w-full gap-5">
+                    <div class="w-full">
+                        <p>From</p>
+                        <div class="flex items-center justify-cente border-[2px] rounded-2xl border-gray-300 w-full max-w-xs p-1">
+                            <img src="https://flagsapi.com/BE/flat/64.png" alt="" srcset="">
+                            <select class="p-3">
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                    <div class="w-full">
+                        <p>To</p>
+                        <div class="flex items-center justify-cente border-[2px] rounded-2xl border-gray-300 w-full max-w-xs p-1">
+                            <img src="https://flagsapi.com/BE/flat/64.png" alt="" srcset="">
+                            <select class="p-3">
+                               
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p>1 Usd = 80INR</p>
+                <button class="btn btn-success w-full">Success</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/codes.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto w-[90%]">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl">Hot Gadgets</a>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-info text-white">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto w-[90%]">
+        <!-- <section class="flex flex-col gap-5 justify-center items-center text-center">
+            <div class="w-[700px] flex flex-col gap-4">
+                <h1 class="text-4xl">Apple Iphone 13 Pro Max</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humou.</p>
+                <div>
+                    <a class="btn btn-info text-white">Buy Now</a>
+                </div>
+            </div>
+            <div>
+                <img class="w-[650px]" src="./images/banner.png" alt="" srcset="">
+            </div>
+        </section> -->
+        <section>
+            <div class="flex flex-col items-center gap-3">
+                <h4 class="text-2xl">Search your phone</h4>
+                <div class="flex items-center">
+                    <input id="Searchfield" type="text" placeholder="Search..."
+                        class="py-2 px-8 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <button onclick="handleSubmit()"
+                        class="py-2 px-4 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">Search</button>
+                </div>
+            </div>
+            <div id="loading-spinner" class="hidden text-center pt-10">
+                <span class="loading loading-infinity loading-lg"></span>
+            </div>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+
+
+
+            </div>
+            <div id="phoneAll" class="text-center mt-5 hidden">
+                <button onclick="handleShowAll()" class="btn btn-info">Load More</button>
+            </div>
+        </section>
+
+        <!-- Open the modal using ID.showModal() method -->
+        
+        <dialog id="show_Modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 id="show-phone-name" class="font-bold text-lg">Hello!</h3>
+               <div id="show-container">
+
+               </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </main>
+
+    <script src="./js/phone.js"></script>
+
+</body>
+
+</html>
