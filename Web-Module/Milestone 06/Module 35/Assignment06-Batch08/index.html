@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ph Tube</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto w-[90%]">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                
+                <div><img src="./images/Logo.png" alt="" srcset=""></div>
+            </div>
+            <div class="navbar-center">
+                <button id="sort-btn" class="btn btn-active">Sort by View</button>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-error text-white">Error</button>
+            </div>
+        </div>
+        <div class="mt-2 border-[1px] border-gray-200"></div>
+    </header>
+    <main class="container mx-auto w-[90%]">
+        <section>
+            <div id="btn-container" class="flex justify-center items-center gap-3 my-3">
+                
+            </div>
+        </section>
+        <section class="mt-12">
+            <div id="error-element" class="hidden  mt-24">
+                <img class="mx-auto" src="./images/Icon.png" alt="">
+                <h1 class="text-3xl mt-3 text-slate-600 text-center">Opps!! There are No data For This Category</h1>
+            </div>
+            <div id="card-container" class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+    
+    
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/math.js"></script> -->
+</body>
+
+</html>
