@@ -1,0 +1,8 @@
+.botel-container{
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 5px;
+}
+.botel-container img{
+    width: 200px;
+}
