@@ -1,0 +1,5 @@
+.user {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust column sizes as needed */
+    grid-gap: 10px; /* Adjust gap between grid items */
+}
