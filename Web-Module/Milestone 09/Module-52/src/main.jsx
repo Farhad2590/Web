@@ -12,6 +12,7 @@ import Home from './Pages/Home/Home.jsx';
 import Login from './Pages/Login/Login.jsx';
 import Register from './Pages/Register/Register.jsx';
 import AuthProvider from './Providers/AuthProvider.jsx';
+import Carreear from './MiddleSide/Carreear.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/careearr",
+        element: <Carreear></Carreear>,
       }
     ]
   },
